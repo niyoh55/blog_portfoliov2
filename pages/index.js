@@ -23,44 +23,71 @@ export default function Home() {
   });
 
   return (
-    <div className="w-full">
-      <Parallax pages={2} className="">
+    <div className="w-full h-full bg-gray-500">
+      <Parallax pages={4} className="bg-neutral-300">
         <ParallaxLayer offset={0} speed={2.5}>
-          <div className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col h-[100vh] bg-neutral-300">
+          <div className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col h-[100vh] ">
             {/* bg-slate-600 */}
-            <div className=" py-[50px] w-[4rem] flex flex-col gap-20 items-center">
-              <p className="rotate-[270deg] text-xl text-black">Linkedin</p>
-              <p className="rotate-[270deg] text-xl text-black">Twitter</p>
-              <p className="rotate-[270deg] text-xl text-black">Facebook</p>
+
+            <div className="flex">
+              <div className=" py-[50px] w-[4rem] flex flex-none flex-col gap-20 items-center h-full border-black border-r-2 border-b-2	">
+                <a href="https://www.linkedin.com/in/niyoh-edwyn-villanueva-5b2524113/">
+                  <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                    Linkedin
+                  </p>
+                </a>
+                <a href="https://www.facebook.com/niyohedwyn.villanueva/">
+                  <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                    Twitter
+                  </p>
+                </a>
+                <a href="https://www.facebook.com/niyohedwyn.villanueva/">
+                  <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                    Facebook
+                  </p>
+                </a>
+              </div>
+
+              <div className="">
+                <div className="flex flex-row flex-1 justify-start items-start h-2/3 w-full">
+                  {/* <div className="2xl:w-[550px] 2xl:h-[550px] xl:w-[500px] xl:h-[500px] lg:w-[450px] lg:h-[450px] md:w-[400px] md:h-[400px] sm:w-[350px] sm:h-[350px]"> */}
+
+                  <div className="h-full w-full px-20 py-10">
+                    <img
+                      className="shadow-2xl rounded-lg"
+                      src="https://wallpapercave.com/wp/wp4923992.png"
+                    />
+                  </div>
+                </div>
+
+                {/* Display Name ko */}
+                <div className=" flex flex-col flex-1 justify-center items-start px-20 h-1/3  ">
+                  <h1 className="2xl:text-7xl xl:text-6xl lg:text-4xl md:text-2xl sm:text-lg text-base tracking-widest ">
+                    Niyoh Edwyn A. Villanueva
+                  </h1>
+
+                  <h2 className="text-base py-10 tracking-widest text-left">
+                    Front-End Developer. Back-End Developer. Web Developer.
+                    Aspiring Data Scientist.
+                  </h2>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col flex-1 justify-end items-start pb-20 px-10 bg-pink-400">
-              <h1 className="2xl:text-8xl xl:text-6xl lg:text-4xl md:text-2xl sm:text-base text-base tracking-widest ">
-                Niyoh Edwyn A. Villanueva
-              </h1>
-
-              <h2 className="text-base py-10 tracking-widest text-left">
-                {/* Front-End Developer. Back-End Developer. Web Developer. Aspiring
-                Data Scientist. */}
-                kwekwekwekwkewkewkekw kwekwkewkewke wkekwek wekwkewke
-                kekekewkewkekwk
-              </h2>
-            </div>
-
-            <div className="flex flex-col flex-1 h-[100vh]  justify-center items-start gap-y-20  pt-[200px] font-montserrat pb-[12rem] text-3xl 2xl:text-9xl xl:text-9xl lg:text-7xl md:text-5xl sm:text-3xl bg-gray-700">
+            <div className="flex flex-col flex-none h-[100vh] w-2/5 justify-center items-start gap-y-20  pt-[200px] font-montserrat pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
               <Link href="/">
-                <h1 className=" tracking-[3rem] font-light not-italic hover:scale-110 hover:italic duration-500 hover:rotate-3 hover:underline">
+                <h1 className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
                   Work
                 </h1>
               </Link>
               <Link href="/">
-                <h1 className="tracking-[3rem] font-light hover:scale-110 hover:italic duration-500 hover:rotate-3 hover:underline ">
+                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
                   About
                 </h1>
               </Link>
 
               <Link href="/">
-                <h1 className="tracking-[3rem] font-light hover:scale-110 hover:italic duration-500 hover:rotate-3 hover:underline ">
+                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
                   Contact
                 </h1>
               </Link>

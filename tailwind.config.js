@@ -9,6 +9,9 @@ module.exports = {
       body: ["Open Sans"],
       montserrat: ["Montserrat"],
     },
+    backgroundImage: {
+      orangutan_orange: "url('/img/orangutan_square.jpg')",
+    },
     extend: {},
   },
   plugins: [],
