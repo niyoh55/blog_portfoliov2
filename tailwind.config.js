@@ -8,6 +8,7 @@ module.exports = {
       backgroundImage: {
         orangutan_orange: "url('../img/orangutan_square.jpg')",
         bg_1: "url('../img/elden-ring-video-game-photography-hd-wallpaper-preview.jpg')",
+        bg_paper: "url('../img/bg_paper.jpg')",
       },
     },
     fontFamily: {
