@@ -105,8 +105,7 @@ export default function Home() {
                 </h1>
 
                 <h2 className="text-base py-10 tracking-widest text-left">
-                  Front-End Developer. Back-End Developer. Web Developer.
-                  Aspiring Data Scientist.
+                  Full-Stack Web Developer. Aspiring Data Scientist.
                 </h2>
               </motion.div>
             </div>
