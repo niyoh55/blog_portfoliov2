@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { animated, useSpring } from "react-spring";
 
 import Link from "next/link";
-import Card from "../components/Card";
+import Card from "../Card";
 export default function Home() {
   const [flip, set] = useState(false);
 
