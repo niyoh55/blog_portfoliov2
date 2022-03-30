@@ -24,9 +24,9 @@ export default function Home() {
 
   return (
     <div className="w-full h-full bg-gray-500">
-      <Parallax pages={4} className="bg-neutral-300">
+      <Parallax pages={4} className="bg-neutral-300 ">
         <ParallaxLayer offset={0} speed={2.5}>
-          <div className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col h-[100vh] ">
+          <div className="flex 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col  h-[100vh] ">
             {/* bg-slate-600 */}
 
             <div className="flex">
@@ -48,8 +48,8 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="">
-                <div className="flex flex-row flex-1 justify-start items-start h-2/3 w-full">
+              <div className="flex flex-col justify-center items-center h-[100vh]">
+                <div className="=flex-1 2xl:h-2/3 xl:h-2/3 lg:h-1/3 md:h-1/3 sm:h-1/3 h-1/3 w-full">
                   {/* <div className="2xl:w-[550px] 2xl:h-[550px] xl:w-[500px] xl:h-[500px] lg:w-[450px] lg:h-[450px] md:w-[400px] md:h-[400px] sm:w-[350px] sm:h-[350px]"> */}
 
                   <div className="h-full w-full px-20 py-10">
@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
 
                 {/* Display Name ko */}
-                <div className=" flex flex-col flex-1 justify-center items-start px-20 h-1/3  ">
+                <div className=" flex flex-col flex-1 justify-center items-start px-20 2xl:h-1/3 xl:h-1/3 lg:h-2/3 md:h-2/3 sm:h-2/3 h-2/3  ">
                   <h1 className="2xl:text-7xl xl:text-6xl lg:text-4xl md:text-2xl sm:text-lg text-base tracking-widest ">
                     Niyoh Edwyn A. Villanueva
                   </h1>
@@ -74,20 +74,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col flex-none h-[100vh] w-2/5 justify-center items-start gap-y-20  pt-[200px] font-montserrat pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
+            <div className="flex  flex-col flex-none h-[100vh] bg-pink-400 w-2/5 justify-center items-start gap-y-20 pt-[200px] font-gilda pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
               <Link href="/">
-                <h1 className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
+                <h1 className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   Work
                 </h1>
               </Link>
               <Link href="/">
-                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
+                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   About
                 </h1>
               </Link>
 
               <Link href="/">
-                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-3 hover:underline ">
+                <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   Contact
                 </h1>
               </Link>
