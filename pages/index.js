@@ -29,7 +29,10 @@ export default function Home() {
       <motion.div
         initial={{ height: "0vh" }}
         animate={{ height: ["0vh", "100vh"] }}
-        transition={{ duration: 1, type: "tween" }}
+        transition={{
+          duration: 1,
+          times: [0, 1],
+        }}
         className="w-full bg-neutral-300 bg-repeat-round"
       >
         <motion.div
