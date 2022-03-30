@@ -26,9 +26,9 @@ export default function Home() {
 
   return (
     <motion.div
-      initial={{ height: 0 }}
+      initial={{ height: "0vh" }}
       animate={{ height: ["0vh", "100vh"] }}
-      duration={{ duration: 1 }}
+      transition={{ duration: 1, type: "tween" }}
       className="w-full bg-neutral-300 bg-repeat-round "
     >
       <motion.div
