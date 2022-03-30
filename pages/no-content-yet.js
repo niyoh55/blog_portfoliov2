@@ -6,7 +6,7 @@ const NoContentyet = () => {
     <div className="w-full h-full">
       <motion.div
         initial={{ height: "100vh" }}
-        animate={{ height: ["100vh", "0vh"], filter: blur("20px") }}
+        animate={{ height: ["100vh", "0vh"]}}
         transition={{ duration: 1, ease: "easeIn" }}
         className="h-[100vh] bg-neutral-300"
       ></motion.div>
