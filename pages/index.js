@@ -75,18 +75,18 @@ export default function Home() {
             </div>
 
             <div className="flex  flex-col flex-none h-[100vh] bg-pink-400 w-2/5 justify-center items-start gap-y-20 pt-[200px] font-gilda pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
-              <Link href="/">
+              <Link href="/no-content-yet">
                 <h1 className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   Work
                 </h1>
               </Link>
-              <Link href="/">
+              <Link href="/no-content-yet">
                 <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   About
                 </h1>
               </Link>
 
-              <Link href="/">
+              <Link href="/no-content-yet">
                 <h1 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-1 hover:underline ">
                   Contact
                 </h1>
