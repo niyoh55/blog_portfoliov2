@@ -64,19 +64,20 @@ export default function Home() {
                 </p>
               </a>
 
-              <Link href="https://www.linkedin.com/in/niyoh-edwyn-villanueva-5b2524113/">
+              <Link href="/no-content-yet">
                 <p className="mt-20 lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
                   Work
                 </p>
               </Link>
-              <Link href="https://www.facebook.com/niyohedwyn.villanueva/">
-                <p className="lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
-                  Contact
-                </p>
-              </Link>
-              <Link href="https://www.facebook.com/niyohedwyn.villanueva/">
+
+              <Link href="/about">
                 <p className="lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
                   About
+                </p>
+              </Link>
+              <Link href="/no-content-yet">
+                <p className="lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
+                  Contact
                 </p>
               </Link>
             </motion.div>
