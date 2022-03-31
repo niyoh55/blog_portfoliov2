@@ -82,15 +82,8 @@ export default function Home() {
             </motion.div>
 
             <div className="flex flex-col justify-center items-center h-[100vh]">
-              <motion.div
-                //   initial={{ y: -400 }}
-                //   animate={{ y: 0 }}
-                //   transition={{ ease: "easeIn", duration: 0.6 }}
-                className="=flex-1 2xl:h-2/3 xl:h-2/3 lg:h-1/3 md:h-1/3 sm:h-1/3 h-1/3  w-full"
-              >
-                {/* <div className="2xl:w-[550px] 2xl:h-[550px] xl:w-[500px] xl:h-[500px] lg:w-[450px] lg:h-[450px] md:w-[400px] md:h-[400px] sm:w-[350px] sm:h-[350px]"> */}
-
-                <div className="h-full w-full md:px-20 md:py-10">
+              <motion.div className="=flex-1 2xl:h-2/3 xl:h-2/3 lg:h-1/3 md:h-2/3 sm:h-1/3 h-1/3 w-full">
+                <div className="h-full w-full px-5 py-2 2xl:px-10 2xl:py-10">
                   <img
                     className="shadow-2xl rounded-lg w-full h-full object-cover"
                     src="https://wallpapercave.com/wp/wp4923992.png"
@@ -99,7 +92,7 @@ export default function Home() {
               </motion.div>
 
               {/* Display Name ko */}
-              <motion.div className=" flex flex-col flex-1 justify-center items-start px-20 2xl:h-1/3 xl:h-1/3 lg:h-2/3 md:h-2/3 sm:h-2/3 h-2/3  ">
+              <motion.div className="flex flex-col flex-1 pt-20 justify-start items-start px-7 sm:px-20 2xl:h-1/3 xl:h-1/3 lg:h-2/3 md:h-1/3 sm:h-2/3 h-2/3  ">
                 <h1 className="2xl:text-7xl xl:text-6xl lg:text-6xl md:text-6xl sm:text-6xl text-4xl tracking-widest ">
                   Niyoh Edwyn A. Villanueva
                 </h1>
@@ -116,17 +109,17 @@ export default function Home() {
               <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.3, delay: 1 }}
                 className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-1 hover:underline "
               >
                 Work
               </motion.h1>
             </Link>
-            <Link href="/no-content-yet">
+            <Link href="/about">
               <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.5, delay: 1 }}
                 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-1 hover:underline "
               >
                 About
@@ -137,7 +130,7 @@ export default function Home() {
               <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.7, delay: 1 }}
                 className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-1 hover:underline "
               >
                 Contact
@@ -200,17 +193,4 @@ export default function Home() {
       ></motion.div>
     </div>
   );
-}
-
-{
-  /* <section
-className={`h-[100vh] ${inViewport ? "bg-blue-300" : ""}  `}
-ref={myRef}
->
-<div className="content">
-  <h1>Hello</h1>
-  <p>{`Enter viewport: ${enterCount} times`}</p>
-  <p>{`Leave viewport: ${leaveCount} times`}</p>
-</div>
-</section> */
 }
