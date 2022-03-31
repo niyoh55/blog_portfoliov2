@@ -20,7 +20,7 @@ const About = () => {
       >
         <motion.div>
           <div className="flex flex-row h-full w-full ">
-            <div className="py-[50px] w-[4rem] items-center justify-start h-full border-black border-r-2 border-b-2	">
+            <div className="py-[50px] w-[4rem] hidden sm:block items-center justify-start h-full border-black border-r-2 border-b-2	">
               <Link href="/">
                 <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
                   Home
@@ -28,7 +28,7 @@ const About = () => {
               </Link>
             </div>
 
-            <div className="h-full flex-1 px-10 2xl:px-60 xl:px-40 lg:px-20 md:px-15 sm:px-10 pt-5 ">
+            <div className="h-full flex-1 px-3 2xl:px-60 xl:px-40 lg:px-20 md:px-15 sm:px-10 pt-5 ">
               <div className="lg:hidden text-center">
                 <p className="text-[3rem] 2xl:text-[13rem] xl:text-[10rem] lg:text-[9rem] md:text-[7rem] sm:text-[5rem] font-gilda font-light tracking-wider">
                   About
@@ -60,7 +60,7 @@ const About = () => {
                   <p>Hi! I&apos;m Niyoh. A full-stack developer.</p>
                 </div>
 
-                <div className="text-2xl ">
+                <div className="text-2xl text-justify">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin pellentesque felis est, vel fermentum leo mollis non.

@@ -22,7 +22,7 @@ const NoContentyet = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          <h1 className="text-9xl text-white text-center">
+          <h1 className="2xl:text-9xl xl:text-7xl text-5xl text-white text-center mb-5">
             Wala pa laman lods
           </h1>
           <img
