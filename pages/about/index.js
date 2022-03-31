@@ -57,7 +57,7 @@ const About = () => {
                 className="w-full font-gilda"
               >
                 <div className="text-4xl py-10">
-                  <p>Hi! I'm Niyoh. A full-stack developer.</p>
+                  <p>Hi! I&apos;m Niyoh. A full-stack developer.</p>
                 </div>
 
                 <div className="text-2xl ">
