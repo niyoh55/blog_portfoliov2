@@ -33,13 +33,13 @@ export default function Home() {
           duration: 1,
           times: [0, 1],
         }}
-        className="w-full bg-neutral-300 bg-repeat-round"
+        className="w-full bg-neutral-300 h-full overflow-y-auto"
       >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 0.25, 0.5, 0.75, 1] }}
           transition={{ delay: 0.75, duration: 1 }}
-          className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col  h-[100vh] "
+          className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col h-full  "
         >
           <div className="flex">
             <motion.div
@@ -82,7 +82,7 @@ export default function Home() {
               </Link>
             </motion.div>
 
-            <div className="flex flex-col justify-center items-center h-[100vh]">
+            <div className="flex flex-col justify-center items-center h-full">
               <motion.div className="=flex-1 2xl:h-2/3 xl:h-2/3 lg:h-1/3 md:h-2/3 sm:h-1/3 h-1/3 w-full">
                 <div className="h-full w-full px-5 py-2 2xl:px-10 2xl:py-10">
                   <img
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
           </div>
 
-          <motion.div className="sm:hidden md:hidden lg:flex hidden flex-col flex-none h-[100vh] w-2/5 justify-center items-start gap-y-20 pt-[200px] font-gilda pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
+          <motion.div className="sm:hidden md:hidden lg:flex hidden flex-col flex-none h-full w-2/5 justify-center items-start gap-y-20 pt-[200px] font-gilda pb-[12rem] text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-3xl sm:text-xl ">
             <Link href="/no-content-yet">
               <motion.h1
                 initial={{ opacity: 0 }}
