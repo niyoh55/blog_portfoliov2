@@ -41,42 +41,42 @@ export default function Home() {
           transition={{ delay: 0.75, duration: 1 }}
           className="flex flex-col 2xl::flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col h-full  "
         >
-          <div className="flex">
+          <div className="flex flex-col sm:flex-row">
             <motion.div
               initial={{ x: -100 }}
               animate={{ x: 0 }}
               transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
-              className=" py-[50px] w-[4rem] flex flex-none flex-col gap-20 items-center h-full border-black border-r-2 border-b-2	"
+              className=" sm:py-[50px] w-full h-auto gap-x-10 gap-y-5 py-5 sm:h-full sm:w-[4rem] flex-none flex-nowrap sm:flex-nowrap px-10 flex-row sm:flex-col sm:gap-20 justify-center sm:justify-start items-center  border-black  sm:border-r-2  border-b-2 flex	"
             >
               <a href="https://www.linkedin.com/in/niyoh-edwyn-villanueva-5b2524113/">
-                <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className=" sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   Linkedin
                 </p>
               </a>
               <a href="https://www.facebook.com/niyohedwyn.villanueva/">
-                <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className="sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   Twitter
                 </p>
               </a>
               <a href="https://www.facebook.com/niyohedwyn.villanueva/">
-                <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className="sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   Facebook
                 </p>
               </a>
 
               <Link href="/no-content-yet">
-                <p className="mt-20 lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className="sm:mt-20 hidden sm:block lg:hidden sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   Work
                 </p>
               </Link>
 
               <Link href="/about">
-                <p className="lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className="lg:hidden hidden sm:block sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   About
                 </p>
               </Link>
               <Link href="/no-content-yet">
-                <p className="lg:hidden rotate-[270deg] text-xl text-black hover:text-blue-600">
+                <p className="lg:hidden  hidden sm:block sm:rotate-[270deg] rotate-[0deg] text-xl text-black hover:text-blue-600">
                   Contact
                 </p>
               </Link>
@@ -101,6 +101,40 @@ export default function Home() {
                 <h2 className="text-base py-10 tracking-widest text-left">
                   Full-Stack Web Developer. Aspiring Data Scientist.
                 </h2>
+              </motion.div>
+
+              <motion.div className="sm:hidden flex flex-col flex-1 w-full h-1/3 justify-start items-start px-7 gap-y-5 pt-10 font-gilda pb-[12rem] text-4xl ">
+                <Link href="/no-content-yet">
+                  <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3, delay: 1 }}
+                    className="underline tracking-[2rem] font-light not-italic hover:scale-110 hover:bg-red-400 hover:italic duration-500 hover:rotate-1 hover:underline "
+                  >
+                    Work
+                  </motion.h1>
+                </Link>
+                <Link href="/about">
+                  <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 1 }}
+                    className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-green-400 hover:italic duration-500 hover:rotate-1 hover:underline "
+                  >
+                    About
+                  </motion.h1>
+                </Link>
+
+                <Link href="/no-content-yet">
+                  <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.7, delay: 1 }}
+                    className="underline tracking-[2rem] font-light hover:scale-110 hover:bg-blue-400 hover:italic duration-500 hover:rotate-1 hover:underline "
+                  >
+                    Contact
+                  </motion.h1>
+                </Link>
               </motion.div>
             </div>
           </div>

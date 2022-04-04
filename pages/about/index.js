@@ -14,13 +14,13 @@ const About = () => {
 
       <motion.div
         initial={{ height: "0vh" }}
-        animate={{ height: ["0%", "100%"] }}
+        animate={{ height: ["0%", "100%"], minHeight: ["0vh", "100vh"] }}
         transition={{ duration: 0.8, ease: "easeIn" }}
-        className="w-full flex justify-center items-center bg-neutral-300 "
+        className="w-full flex justify-center items-center bg-neutral-300 overflow-x-hidden"
       >
         <motion.div>
-          <div className="flex flex-row h-full w-full ">
-            <div className="py-[50px] w-[4rem] hidden sm:block items-center justify-start h-full border-black border-r-2 border-b-2	">
+          <div className="flex flex-row h-full w-full min-w-[100vw] ">
+            <div className="py-[50px] w-[4rem] hidden sm:block items-center justify-start h-full border-black border-r-2 border-t-2 border-b-2	">
               <Link href="/">
                 <p className="rotate-[270deg] text-xl text-black hover:text-blue-600">
                   Home
@@ -44,9 +44,10 @@ const About = () => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 1, duration: 0.6 }}
-                  className="flex flex-col flex-grow justify-center items-center w-full "
+                  className="flex flex-row flex-initial justify-center items-start w-full mt-5 "
                 >
-                  <img src="https://i.ibb.co/nzBjqVQ/1-29304022021.jpg" />
+                  {/* <img src="https://i.ibb.co/nzBjqVQ/1-29304022021.jpg" /> */}
+                  <img src="https://i.ibb.co/nCSh6jP/194056538-824738471489108-8045471048089244225-n.jpg" />
                 </motion.div>
               </div>
 
@@ -56,59 +57,42 @@ const About = () => {
                 transition={{ delay: 0.8, duration: 0.3 }}
                 className="w-full font-gilda"
               >
-                <div className="text-4xl py-10">
+                <div className="text-4xl py-10 px-5 sm:px-0">
                   <p>Hi! I&apos;m Niyoh. A full-stack developer.</p>
                 </div>
 
-                <div className="text-2xl text-justify">
+                <div className="text-2xl text-justify px-5 sm:px-0 pb-20">
+                  {/* I was amazed on how programming works, how it is
+                    done, the different programming languages and the different
+                    applications of it. */}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin pellentesque felis est, vel fermentum leo mollis non.
-                    Proin pretium felis velit, sed fringilla erat congue eu.
-                    Donec non feugiat augue. Nam scelerisque nulla at massa
-                    hendrerit vehicula. Nunc sed molestie nunc, sit amet
-                    imperdiet metus. Mauris ac tristique ipsum, a vestibulum
-                    libero. Nulla facilisi. Donec aliquet nunc neque, nec porta
-                    massa vestibulum at. Curabitur nec efficitur sapien. Ut
-                    iaculis odio non velit fermentum sagittis. Maecenas
-                    scelerisque viverra lacus, quis dictum nibh placerat id.
-                  </p>
-
-                  <p className="pt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin pellentesque felis est, vel fermentum leo mollis non.
-                    Proin pretium felis velit, sed fringilla erat congue eu.
-                    Donec non feugiat augue. Nam scelerisque nulla at massa
-                    hendrerit vehicula. Nunc sed molestie nunc, sit amet
-                    imperdiet metus. Mauris ac tristique ipsum, a vestibulum
-                    libero. Nulla facilisi. Donec aliquet nunc neque, nec porta
-                    massa vestibulum at. Curabitur nec efficitur sapien. Ut
-                    iaculis odio non velit fermentum sagittis. Maecenas
-                    scelerisque viverra lacus, quis dictum nibh placerat id.
-                  </p>
-                  <p className="pt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin pellentesque felis est, vel fermentum leo mollis non.
-                    Proin pretium felis velit, sed fringilla erat congue eu.
-                    Donec non feugiat augue. Nam scelerisque nulla at massa
-                    hendrerit vehicula. Nunc sed molestie nunc, sit amet
-                    imperdiet metus. Mauris ac tristique ipsum, a vestibulum
-                    libero. Nulla facilisi. Donec aliquet nunc neque, nec porta
-                    massa vestibulum at. Curabitur nec efficitur sapien. Ut
-                    iaculis odio non velit fermentum sagittis. Maecenas
-                    scelerisque viverra lacus, quis dictum nibh placerat id.
-                  </p>
-                  <p className="py-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin pellentesque felis est, vel fermentum leo mollis non.
-                    Proin pretium felis velit, sed fringilla erat congue eu.
-                    Donec non feugiat augue. Nam scelerisque nulla at massa
-                    hendrerit vehicula. Nunc sed molestie nunc, sit amet
-                    imperdiet metus. Mauris ac tristique ipsum, a vestibulum
-                    libero. Nulla facilisi. Donec aliquet nunc neque, nec porta
-                    massa vestibulum at. Curabitur nec efficitur sapien. Ut
-                    iaculis odio non velit fermentum sagittis. Maecenas
-                    scelerisque viverra lacus, quis dictum nibh placerat id.
+                    {"\t"}I have been programming/developing since I was in
+                    College. I was first introduced to the concept of
+                    programming on my first major course, on this course we were
+                    taught the basics of C++. I enjoyed and excelled in every
+                    course where programming is involved, we were taught
+                    different programming languages like Python, C++, and PHP.
+                    Python was for computer vision, C++ was mainly focused on
+                    introducing us to the fundamentals, and PHP was for web
+                    development with a simple backend server.
+                    <br></br>
+                    <br></br>
+                    {"\t"}My first job experience is when we had our internships
+                    for College, I was tasked to make an E-Commerce Site using
+                    Magento and a simple mobile application using Ionic. After
+                    College, I got an internship to a startup company that
+                    mainly focuses on E-Commerce applications. This is where I
+                    was first introduced to Javascript frameworks in general. We
+                    used React Native for building an E-Commerce application
+                    that sells products from a specific brand. I was greatly
+                    involved on the project and have worked on different parts
+                    of the application. My tasks were mainly focus on the
+                    front-end side of the application.
+                    <br></br>
+                    <br></br>
+                    {"\t"}Upon realizing how useful and simple to use Javascript
+                    Frameworks are, I took courses on Udemy regarding ReactJS,
+                    React Native and NodeJS. And I'm still learning everyday 😁
                   </p>
                 </div>
               </motion.div>
