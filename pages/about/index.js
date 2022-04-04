@@ -92,7 +92,7 @@ const About = () => {
                     <br></br>
                     {"\t"}Upon realizing how useful and simple to use Javascript
                     Frameworks are, I took courses on Udemy regarding ReactJS,
-                    React Native and NodeJS. And I'm still learning everyday 😁
+                    React Native and NodeJS. And I&apos;m still learning everyday 😁
                   </p>
                 </div>
               </motion.div>
